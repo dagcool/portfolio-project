@@ -1380,15 +1380,55 @@ h2 {
   font-size: 12px;
 }
 
+.case-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  margin-bottom: 4px;
+  padding: 3px 10px 3px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid;
+  box-shadow: 2px 2px 0 var(--shadow);
+}
+
+.case-label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+}
+
+.case-label--what {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background: rgba(88, 215, 255, 0.06);
+}
+
+.case-label--what::before {
+  background: var(--cyan);
+}
+
+.case-label--result {
+  color: var(--acid);
+  border-color: var(--acid);
+  background: rgba(200, 241, 53, 0.06);
+}
+
+.case-label--result::before {
+  background: var(--acid);
+}
+
 .case-points {
   display: grid;
   gap: 6px;
   margin: 12px 0 0;
   padding: 0;
   list-style: none;
-}
-
-.case-points li {
+}.case-points li {
   position: relative;
   padding-left: 16px;
   color: var(--muted);
