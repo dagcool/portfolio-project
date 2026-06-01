@@ -1975,7 +1975,7 @@ h3 {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   background: #050505;
   border: 1px solid var(--line);
 }
