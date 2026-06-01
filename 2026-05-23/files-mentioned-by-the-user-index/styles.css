@@ -3169,8 +3169,7 @@ h2 {
   }
 }
 
-/* Three-layer white glow for interactive elements */
-a,
+/* Three-layer white glow for control surfaces */
 button,
 [role="button"],
 input,
@@ -3192,8 +3191,6 @@ summary,
     transform 180ms ease;
 }
 
-a:hover,
-a:focus-visible,
 button:hover,
 button:focus-visible,
 [role="button"]:hover,
@@ -3218,6 +3215,23 @@ summary:focus-visible,
     0 0 58px rgba(255, 255, 255, 0.14),
     inset 0 0 11px rgba(255, 255, 255, 0.12);
   filter: brightness(1.07);
+}
+
+.contact-line a,
+.footer a {
+  text-decoration-color: rgba(200, 241, 53, 0.34);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.contact-line a:hover,
+.contact-line a:focus-visible,
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--acid);
+  text-decoration-color: var(--acid);
+  filter: none;
 }
 
 .nav a,
