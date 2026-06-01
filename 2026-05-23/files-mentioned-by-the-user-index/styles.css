@@ -15,7 +15,7 @@
   --cyan: #58d7ff;
   --amber: #ffd166;
   --shadow: #101013;
-  --cursor-pixel: url("assets/cursor-user-stretched.png") 1 1, auto;
+  --cursor-pixel: url("assets/cursor-user-stretched.webp") 1 1, auto;
   --cursor-pixel-active: url("assets/cursor-user-stretched-active.png?v=green-hover") 4 5, pointer;
 }
 
