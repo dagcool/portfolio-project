@@ -334,6 +334,16 @@ document.querySelectorAll("[data-gallery-item]").forEach((button) => {
   });
 });
 
+document.querySelectorAll("[data-fit-spoiler]").forEach((spoiler) => {
+  const toggle = spoiler.querySelector("[data-fit-toggle]");
+  if (!toggle) return;
+  toggle.addEventListener("click", () => {
+    const open = spoiler.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Свернуть" : "Показать всё";
+  });
+});
+
 document.querySelectorAll("[data-spoiler]").forEach((spoiler) => {
   const toggle = spoiler.querySelector("[data-spoiler-toggle]");
   if (!toggle) return;
